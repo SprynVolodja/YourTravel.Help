@@ -1,0 +1,647 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>gid search</title>
+<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<!--link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" /-->
+<link rel="stylesheet" type="text/css" href="css/datatable.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.popSelect.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" href="css/style_a.css" />
+<link rel="stylesheet" href="css/new_style.css" />
+
+
+
+</head>
+<body>
+	<div id="page-wrapper" class="clear blue-bg">
+		<div class="sidenav-overlay"></div>
+		<div id="page-header" class="bg-gradient-9 loading">
+			<div class="mob-btn">
+				<p class="lines-button x">
+					<span class="lines"></span>
+				</p>
+			</div>
+			<div id="header-logo" class="logo-bg">
+				<a href="#" class="logo-content-big" title="YourTravel"></a>
+				<p id="close-sidebar" title="Close sidebar">
+					<i class="glyphicon glyphicon-menu-left"></i>
+				</p>
+			</div>
+			<div id="header-nav-left">
+				<div class="user-account-btn dropdown">
+					<a href="#" title="My Account" class="user-profile clearfix" data-toggle="dropdown" aria-expanded="false">
+						<p class="avatar-cont"><img src="img/avatar.jpg" alt="Profile image"></p>
+						<span>Мануйлова Емма</span>
+						<p class='dropdown-icon'><i class="glyphicon glyphicon glyphicon-menu-down"></i></p>
+					</a>
+					<div class="dropdown-menu float-left">
+						<div class="box-sm">
+							<ul class="reset-ul mrg5B">
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View login page example
+									</a>
+								</li>
+								<li><span class="divider"></span></li>
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View lockscreen example
+									</a>
+								</li>
+								<li><span class="divider"></span></li>
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View account details
+									</a>
+								</li>
+							</ul>
+							<div class="pad5A button-pane button-pane-alt text-center">
+								<a href="#" class="btn display-block font-normal btn-danger">
+									<i class="glyphicon glyphicon-off"></i> Logout
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #header-nav-left -->
+			<div id="header-nav-right">
+				<div class="dropdown megaphone-bg" id="notifications-btn">
+					<a data-toggle="dropdown" href="#" title="">
+						<span class="small-badge bg-yellow"></span>
+					</a>
+					<div class="dropdown-menu box-md float-right">
+
+						<div class="dd-title display-block pad10A">
+							СПОВІЩЕННЯ
+						</div>
+						<ul class="no-border notifications-box">
+							<li>
+								<span class="bg-danger icon-notification fa fa-bullhorn"></span>
+								<div class="notification-text new-operator">
+									Зареєстровано нового Тур-оператора <span class='operator-color'>"ТревелСім"</span>!
+									<p>Працюєте з ним?</p>
+									<p class='btn-block'>
+										<a href="#" class="btn green-btn" title="Так">Так</a>
+										<a href="#" class="btn red-btn" title="Ні">Ні</a>
+									</p>
+								</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-users"></span>
+								<div class="notification-text new-operator">
+									Ви повинні оплатити <span class='operator-color'>20 євро</span>, щоб надалі користуватися сервісом! Оплатити можна - <a href='#'>тут</a>.
+								</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-green icon-notification fa fa-sitemap"></span>
+								<div class="notification-text font-green">A success message example.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-azure icon-notification fa fa-random"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-ticket"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-blue icon-notification fa fa-user"></span>
+								<div class="notification-text font-blue">Alternate notification styling.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-purple icon-notification fa fa-user"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-user"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-green icon-notification fa fa-user"></span>
+								<div class="notification-text font-green">A success message example.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-purple icon-notification fa fa-user"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-user"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+						</ul>
+						<div class="pad10A button-pane button-pane-alt text-center">
+							<a href="#" class="btn" title="Переглянути всі">
+								Переглянути всі
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page-sidebar" qwe="rty1" >
+			<div class="scroll-sidebar">
+				<ul id="sidebar-menu" class="sf-js-enabled sf-arrows">
+
+
+				</ul>
+			
+				<!-- #sidebar-menu -->
+			</div>
+		</div>
+
+
+		
+		<div id="page-content-wrapper" class='agency-moderator-get'>
+			<input hidden value='' class='user-id'>
+			<div id="page-content">
+				<div class="container">
+					<div id="page-title">
+						<h2 class="title_for_list_of_excursions">
+							<span id='lastname'>Мануйлова</span> 
+							<span id='firstname'> Емма</span>
+							<span class="specialization">Екскурсії</span>
+						</h2>
+					</div>
+					<div class="main-content page_gid_search">
+
+						<div id="example_wrapper" class="dataTables_wrapper no-footer overflow_block">
+							<table id="example1"  class="display dataTable " cellspacing="0"  role="grid" aria-describedby="example_info" style="width: 100%;">
+								<thead>
+									<tr role="row">
+										<th class="sorting_desc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label=""  >Рейс</th>
+										<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label=""  >Курорт</th>
+										<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label=""  >Готель</th>
+										<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label=""  >Турист</th>
+										<th class="sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 38px; display: none;"><i class="glyphicon glyphicon-lock"></i></th>
+										<th class="sorting_disabled" rowspan="1" colspan="1" aria-label="" style="width: 39px; display: none;"><i class="glyphicon glyphicon-remove"></i></th>
+									</tr>
+
+								</thead>
+								<tr >
+									<td class="top_search">
+										<input type="search" placeholder="Пошук по рейсах..">
+									</td>
+									<td class="top_search"> 
+										<input type="search" placeholder="Пошук по курортах..">
+									</td>
+									<td  class="top_search">
+										<input type="search" placeholder="Пошук по готелям..">
+									</td>
+									<td  class="top_search">
+										<input type="search" class="valid_this_field" placeholder="Пошук по туристах..">
+									</td>
+
+									<td style="display: none;">
+										<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+									</td>
+									<td style="display: none;">
+										<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+									</td>
+								</tr> 
+
+								<tbody id="">
+
+									<tr role="row" class="odd table_line">
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="flight_name">GKD266865865</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="city_name">Афіни</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="hotel_name">Royal Hotel</span>
+											</label>
+										</td>
+										<td>
+											<label for="">
+												<input type="checkbox">
+												<span class="tourist_name">Ivan Petrenko</span>
+											</label>
+										</td>
+										<td style="display: none;">
+											<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+										</td>
+										<td style="display: none;">
+											<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+										</td>
+									</tr>
+
+									<tr role="row" class="even table_line">
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="flight_name">GKD266865865</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="city_name">Афіни</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="hotel_name">Royal Hotel</span>
+											</label>
+										</td>
+										<td>
+											<label for="">
+												<input type="checkbox">
+												<span class="tourist_name">Ivan Petrenko</span>
+											</label>
+										</td>
+										<td style="display: none;">
+											<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+										</td>
+										<td style="display: none;">
+											<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+										</td>
+									</tr>
+
+									<tr role="row" class="odd table_line">
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="flight_name">GKD266865865</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="city_name">Афіни</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="hotel_name">Royal Hotel</span>
+											</label>
+										</td>
+										<td>
+											<label for="">
+												<input type="checkbox">
+												<span class="tourist_name">Ivan Petrenko</span>
+											</label>
+										</td>
+										<td style="display: none;">
+											<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+										</td>
+										<td style="display: none;">
+											<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+										</td>
+									</tr>
+
+									<tr role="row" class="even table_line">
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="flight_name">GKD266865865</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="city_name">Афіни</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="hotel_name">Royal Hotel</span>
+											</label>
+										</td>
+										<td>
+											<label for="">
+												<input type="checkbox">
+												<span class="tourist_name">Ivan Petrenko</span>
+											</label>
+										</td>
+										<td style="display: none;">
+											<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+										</td>
+										<td style="display: none;">
+											<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+										</td>
+									</tr>
+
+									<tr role="row" class="odd table_line">
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="flight_name">GKD266865865</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="city_name">Афіни</span>
+											</label>
+										</td>
+										<td class="">
+											<label for="">
+												<input type="checkbox">
+												<span class="hotel_name">Royal Hotel</span>
+											</label>
+										</td>
+										<td>
+											<label for="">
+												<input type="checkbox">
+												<span class="tourist_name">Ivan Petrenko</span>
+											</label>
+										</td>
+										<td style="display: none;">
+											<p class="table-block" data-toggle="modal" data-target="#block-modal"><input hidden="" value=""><i class="glyphicon glyphicon-lock"></i></p>
+										</td>
+										<td style="display: none;">
+											<p class="table-delete" data-toggle="modal" data-target="#remove-modal"><input hidden="" value=""><i class="glyphicon glyphicon-remove"></i></p>
+										</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>
+						<div class="tourists_selected">
+							<p>Вибрано  <span class="number_tourists">0 
+							</span> <input type="hidden" class="hidden_number">туриста</p>
+							<button class="choose_button ">надіслати</button>
+						</div>
+
+						<div class="block_message_history">
+							<div class="block_name">
+								<div class="left">
+									<h3>Історія повідомлень</h3>
+								</div>
+								<div class="right">
+									<div class="search_block">
+										<input type="text" placeholder="Пошук..">
+										<button>
+											<span class="glyphicon glyphicon-search"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="line_massage">
+								<div class="left">
+									<div class="top">
+										<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/city-754914.jpg" alt="">
+										<ul>
+											<li>
+												<p>Кому : <span>Всім</span></p>
+												<p>Готель : <span>Royal Hotel</span></p>
+
+											</li>
+											<li>
+												<p>Тема: <span> Екскурсія</span></p>
+											</li>
+										</ul>
+									</div>
+									<div class="short_description">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">Читати далі</a>
+										</p>
+									</div>
+								</div>
+								<div class="right">
+									<p><span class="date_publication">24.07.2017</span> о <span class="time_publication">17:25</span></p>
+									
+								</div>
+							</div>
+
+							<div class="line_massage">
+								<div class="left">
+									<div class="top">
+										<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/city-754914.jpg" alt="">
+										<ul>
+											<li>
+												<p>Кому : <span>Всім</span></p>
+												<p>Готель : <span>Royal Hotel</span></p>
+
+											</li>
+											<li>
+												<p>Тема: <span> Екскурсія</span></p>
+											</li>
+										</ul>
+									</div>
+									<div class="short_description">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">Читати далі</a>
+										</p>
+									</div>
+								</div>
+								<div class="right">
+									<p><span class="date_publication">24.07.2017</span> о <span class="time_publication">17:25</span></p>
+									
+								</div>
+							</div>
+
+							<div class="line_massage">
+								<div class="left">
+									<div class="top">
+										<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/city-754914.jpg" alt="">
+										<ul>
+											<li>
+												<p>Кому : <span>Всім</span></p>
+												<p>Готель : <span>Royal Hotel</span></p>
+
+											</li>
+											<li>
+												<p>Тема: <span> Екскурсія</span></p>
+											</li>
+										</ul>
+									</div>
+									<div class="short_description">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">Читати далі</a>
+										</p>
+									</div>
+								</div>
+								<div class="right">
+									<p><span class="date_publication">24.07.2017</span> о <span class="time_publication">17:25</span></p>
+									
+								</div>
+							</div>
+
+							<div class="line_massage">
+								<div class="left">
+									<div class="top">
+										<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/city-754914.jpg" alt="">
+										<ul>
+											<li>
+												<p>Кому : <span>Всім</span></p>
+												<p>Готель : <span>Royal Hotel</span></p>
+
+											</li>
+											<li>
+												<p>Тема: <span> Екскурсія</span></p>
+											</li>
+										</ul>
+									</div>
+									<div class="short_description">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">Читати далі</a>
+										</p>
+									</div>
+								</div>
+								<div class="right">
+									<p><span class="date_publication">24.07.2017</span> о <span class="time_publication">17:25</span></p>
+									
+								</div>
+							</div>
+
+							<div class="line_massage">
+								<div class="left">
+									<div class="top">
+										<img src="http://cdn.images.express.co.uk/img/dynamic/22/590x/city-754914.jpg" alt="">
+										<ul>
+											<li>
+												<p>Кому : <span>Всім</span></p>
+												<p>Готель : <span>Royal Hotel</span></p>
+
+											</li>
+											<li>
+												<p>Тема: <span> Екскурсія</span></p>
+											</li>
+										</ul>
+									</div>
+									<div class="short_description">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="">Читати далі</a>
+										</p>
+									</div>
+								</div>
+								<div class="right">
+									<p><span class="date_publication">24.07.2017</span> о <span class="time_publication">17:25</span></p>
+									
+								</div>
+							</div>
+
+
+
+
+
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal_box ">
+		<div class="modal">
+			<div class="title_modal">
+				<h3>Повідомлення</h3>
+				<span class="close_modal">×</span>
+			</div>
+			<form action="">
+				<textarea type="text" placeholder="Введіть ваше повідомлення.."> </textarea>
+				<div class="subject_message">
+					<label>Тема*</label>
+					<select name="" id="">
+						<option value="">Зустріч з гідом</option>
+						<option value="">Трансфер</option>
+						<option value="">Екскурсія</option>
+					</select>
+				</div>
+				<div class="bottom_line">
+					<button class="send">Надіслати</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/momentjs.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/datatable.js"></script>
+	<script type="text/javascript" src="js/jquery.popSelect.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="js/sparklines.js"></script>
+	<script type="text/javascript" src="js/sparklines-demo.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery.inputmask-multi.min.js"></script> -->
+	<script type="text/javascript" src="js/validate-rules.js"></script>
+	<script type="text/javascript" src="js/jquery.payment.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/script00.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#example1').DataTable();
+			$('#example1').next('#example1_info').remove();
+			$('#example1').next('#example1_paginate').remove();
+			$('#example1').prev('#example1_filter').remove();
+			$('#example1').prev('#example1_length').remove();
+		} );
+	</script>
+</body>
+</html>

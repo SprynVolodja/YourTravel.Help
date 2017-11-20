@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>e-02-moderators-create-01</title>
+<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/datatable.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.popSelect.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css" />
+<link rel="stylesheet" type="text/css" href="css/slick.css" />
+<link rel="stylesheet" href="css/style_a.css" />
+<link rel="stylesheet" href="css/new_style.css" />
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/momentjs.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/datatable.js"></script>
+<script type="text/javascript" src="js/jquery.popSelect.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/sparklines.js"></script>
+<script type="text/javascript" src="js/sparklines-demo.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.inputmask-multi.min.js"></script> -->
+<script type="text/javascript" src="js/validate-rules.js"></script>
+<script type="text/javascript" src="js/jquery.payment.min.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/script00.js"></script>
+</head>
+<body>
+	<div id="page-wrapper" class="clear blue-bg">
+		
+		<div class="sidenav-overlay"></div>
+		<div id="page-header" class="bg-gradient-9 loading">
+			<div class="mob-btn">
+				<p class="lines-button x">
+					<span class="lines"></span>
+				</p>
+			</div>
+			<div id="header-logo" class="logo-bg">
+				<a href="#" class="logo-content-big" title="YourTravel"></a>
+				<p id="close-sidebar" title="Close sidebar">
+					<i class="glyphicon glyphicon-menu-left"></i>
+				</p>
+			</div>
+			<div id="header-nav-left">
+				<div class="user-account-btn dropdown">
+					<a href="#" title="My Account" class="user-profile clearfix" data-toggle="dropdown" aria-expanded="false">
+						<p class="avatar-cont"><img src="img/avatar.jpg" alt="Profile image"></p>
+						<span>Мануйлова Емма</span>
+						<p class='dropdown-icon'><i class="glyphicon glyphicon glyphicon-menu-down"></i></p>
+					</a>
+					<div class="dropdown-menu float-left">
+						<div class="box-sm">
+							<ul class="reset-ul mrg5B">
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View login page example
+									</a>
+								</li>
+								<li><span class="divider"></span></li>
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View lockscreen example
+									</a>
+								</li>
+								<li><span class="divider"></span></li>
+								<li>
+									<a href="#">
+										<i class="float-right glyphicon glyphicon-triangle-right"></i> View account details
+									</a>
+								</li>
+							</ul>
+							<div class="pad5A button-pane button-pane-alt text-center">
+								<a href="#" class="btn display-block font-normal btn-danger">
+									<i class="glyphicon glyphicon-off"></i> Logout
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #header-nav-left -->
+			<div id="header-nav-right">
+				<div class="dropdown megaphone-bg" id="notifications-btn">
+					<a data-toggle="dropdown" href="#" title="">
+						<span class="small-badge bg-yellow"></span>
+					</a>
+					<div class="dropdown-menu box-md float-right">
+
+						<div class="dd-title display-block pad10A">
+							СПОВІЩЕННЯ
+						</div>
+						<ul class="no-border notifications-box">
+							<li>
+								<span class="bg-danger icon-notification fa fa-bullhorn"></span>
+								<div class="notification-text new-operator">
+									Зареєстровано нового Тур-оператора <span class='operator-color'>"ТревелСім"</span>!
+									<p>Працюєте з ним?</p>
+									<p class='btn-block'>
+										<a href="#" class="btn green-btn" title="Так">Так</a>
+										<a href="#" class="btn red-btn" title="Ні">Ні</a>
+									</p>
+								</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-users"></span>
+								<div class="notification-text new-operator">
+									Ви повинні оплатити <span class='operator-color'>20 євро</span>, щоб надалі користуватися сервісом! Оплатити можна - <a href='#'>тут</a>.
+								</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-green icon-notification fa fa-sitemap"></span>
+								<div class="notification-text font-green">A success message example.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-azure icon-notification fa fa-random"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-ticket"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-blue icon-notification fa fa-user"></span>
+								<div class="notification-text font-blue">Alternate notification styling.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-purple icon-notification fa fa-user"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-user"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-green icon-notification fa fa-user"></span>
+								<div class="notification-text font-green">A success message example.</div>
+								<div class="notification-time">
+									<b>2 hours</b> ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-purple icon-notification fa fa-user"></span>
+								<div class="notification-text">This is an error notification</div>
+								<div class="notification-time">
+									5 хв тому
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+							<li>
+								<span class="bg-warning icon-notification fa fa-user"></span>
+								<div class="notification-text">This is a warning notification</div>
+								<div class="notification-time">
+									<b>15</b> minutes ago
+									<span class="fa fa-clock-o"></span>
+								</div>
+							</li>
+						</ul>
+						<div class="pad10A button-pane button-pane-alt text-center">
+							<a href="#" class="btn" title="Переглянути всі">
+								Переглянути всі
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page-sidebar">
+			<div class="scroll-sidebar">
+				<ul id="sidebar-menu" class="sf-js-enabled sf-arrows">
+					<li>
+						<a href="#" title="Робочий стіл" class="sfActive">
+							<span class='left-img'><img  src="img/icons/ambrella.png" alt=""></span>
+							<span>Робочий стіл</span>
+						</a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<p title="Модератори" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/ocean.png" alt=""></span>
+							<span>Модератори</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити" class='active'><span>Створити</span></a></li>
+								<li><a href="#" title="Модератори "><span>Модератори</span></a></li>
+							</ul>
+
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Тур-оператори" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/point.png" alt=""></span>
+							<span>Тур-оператори</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Тур-оператори"><span>Тур-оператори</span></a></li>
+							</ul>
+
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Widgets" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/camera.png" alt=""></span>
+							<span>Модератори (Тур-опер.)</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Модератори (Тур-оператори)"><span>Модератори (Тур-оператори)</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Агенства" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/book.png" alt=""></span>
+							<span>Агенства</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Form validation"><span>Агенства</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Модератори" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/shoes.png" alt=""></span>
+							<span>Модератори (Агенства)</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Модератори (Агенства)"><span>Модератори (Агенства)</span></a></li>
+							</ul>
+
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Тури" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/bag.png" alt=""></span>
+							<span>Тури</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Тури"><span>Тури</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Клієнти" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/sailboat.png" alt=""></span>
+							<span>Клієнти</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Клієнти"><span>Клієнти</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Готелі" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/arrivals.png" alt=""></span>
+							<span>Готелі</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Створити"><span>Створити</span></a></li>
+								<li><a href="#" title="Готелі"><span>Готелі</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Платежі" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/ticket.png" alt=""></span>
+							<span>Платежі</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Платежі"><span>Платежі</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+					<li>
+						<p title="Редагування платежів" class="sf-with-ul">
+							<span class='left-img'><img  src="img/icons/sun.png" alt=""></span>
+							<span>Редагування платежів</span>
+							<i class="glyphicon glyphicon-chevron-right"></i>
+						</p>
+						<div class="sidebar-submenu" style="display: none;">
+							<ul>
+								<li><a href="#" title="Тур-оператори"><span>Тур-оператори</span></a></li>
+								<li><a href="#" title="Агенства"><span>Агенства</span></a></li>
+							</ul>
+						</div>
+						<!-- .sidebar-submenu -->
+					</li>
+				</ul>
+				<!-- #sidebar-menu -->
+			</div>
+		</div>
+
+		<div id="page-content-wrapper">
+			<div id="page-content">
+				<div class="container">
+					<div id="page-title">
+						<h2>Модератори (Агенства)</h2>
+						<p>Редагування даних Модератора (Агенства)</p>
+					</div>
+					<div class="main-content">
+						<form class="main-content-item" id="form" method="get" action="">
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Номер телефону*</span>
+									<input type="text" class="form-control telephone" placeholder="" name="telephone[2]" minlength="10" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Прізвище*</span>
+									<input type="text" class="form-control text-only" placeholder="" name="lastname" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Ім'я*</span>
+									<input type="text" class="form-control text-only" placeholder="" name="firstname" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Стать*</span>
+									<select class="form-control" name="gender" required>
+										<option selected disabled></option>
+										<option>чоловіча</option>
+										<option>жіноча</option>
+									</select>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Email*</span>
+									<input type="email" class="form-control" placeholder="" name="email[1]" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Країна*</span>
+									<input type="text" class="form-control" placeholder="" name="country" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Місто*</span>
+									<input type="text" class="form-control" placeholder="" name="city" required>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Viber</span>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Skype</span>
+									<input type="text" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="divider-block textarea-block">
+								<div class="input-block">
+									<span>Особисті дані</span>
+									<textarea class="form-control" placeholder=""></textarea>
+								</div>
+							</div>
+							<div class="divider-block upload-block">
+								<div class="input-block">
+									<span>Завантажити фото</span>
+									<div class='upload-photo-cont'>
+										<div class='upload-photo'>
+											<input class="uploader" type="file" name="f">
+											<span class='clear-img'>×</span>
+										</div>
+										<p class="duplicate-click upload-btn">Вибрати</p>
+									</div>
+								</div>
+							</div>
+							<div class="divider-block">
+								<div class="input-block">
+									<span>Агенство*</span>
+									<select class="form-control" name="field[1]" required>
+										<option selected disabled></option>
+										<option>option1</option>
+										<option>option2</option>
+									</select>
+								</div>
+							</div>
+							<div class="divider-block no-divid">
+								<div class="input-block ">
+									<div class="form-btn">
+										<input type="submit" value="ЗБЕРЕГТИ" class="btn display-block font-normal btn-danger">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>YourTravel</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="land_inc/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="land_inc/css/owl.carousel.css">
+<link rel="stylesheet" href="css/preloader.css">
+<link rel="stylesheet" href="land_inc/css/main.css">
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="land_inc/js/owl.carousel.min.js"></script>
+
+
+
+
+<!-- <script type="text/javascript" src="js/jquery.inputmask.bundle.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.inputmask-multi.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<!--script type="text/javascript" src="js/validate-rules.js"></script-->
+<script type="text/javascript" src="land_inc/js/main.js"></script>
+<!-- <script type="text/javascript" src="js/translate/translate.js"></script> -->
+<title></title>
+</head>
+
+<body class='landing'>
+	<section class='header-section'>
+		<div class="wrapper wrapper-first">
+			<header class='clear'>
+				<div class='logo'><img src='land_inc/images/logo.png' alt=''></div>
+				<div class='header-h-cont clear'>
+					<div class='login'>
+						<form id='form'>
+							<input type='text' placeholder='логін'>
+							<input type='password' placeholder='пароль'>
+							<input type='button' value="Увійти" class='btn'>
+						</form>
+						<p class='login-error'>Ви ввели невірний логін або пароль <a href='j-02-restore-pass-01.html'>Забули пароль?</a></p>
+					</div>
+					<div class='register-btn'>
+						<a href="#registration_panel" class="btn btn-register">Зареєструватись</a>
+					</div>
+					<div class="header_language">
+						<div class="header_language_current">
+							<span class="header_language_current_">Укр</span>
+							<div class="dropdown-icon"><i class="glyphicon glyphicon glyphicon-menu-down"></i></div>
+						</div>
+						<ul class="header_language_list">
+							<li class='lang-ru'>Рус</li>
+							<li class='lang-ua'>Укр</li>
+							<li class='lang-uk'>Eng</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-lg-12">
+					<img src="land_inc/images/rocket1.png" alt="" class="rocket-1">
+					<a href="#" class="play-video" data-toggle="modal" data-target="#show-video">
+						<img src="land_inc/images/play-video.png" alt="play-video">
+					</a>
+
+					<h1 class="text-center title-page">Подорожуй комфортно та безпечно!</h1>
+
+					<p class="text-center our-service-text">
+						Ми пропонуємо якісний сервіс для
+						<br> управління Вашими подорожами
+					</p>
+
+					<div class="btn-starts">
+						<a href="#" class="btn btn-blue btn-big">Почати зараз</a>
+						<a href="#" class="btn btn-red btn-big">Дізнатися більше</a>
+					</div>
+
+					<div class="text-center">
+						<a href="#join-us-section" class="scroll-down">
+							<img src="land_inc/images/mouse.png" alt="mouse">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="show-video" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/KtCzSv-Jl1k" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='join-us' id='join-us-section'>
+		<div class="wrapper wrapper-second">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center title-page">приєднуйтесь до нас</h2>
+				</div>
+
+				<div class="col-md-6">
+					<div class="circles">
+						<div class="circle-1"></div>
+						<div class="circle-2"></div>
+						<div class="circle-3"></div>
+						<img src="land_inc/images/manonrocket.png" alt="man on rocket" class="man-on-rocket">
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="registration panel" id='registration_panel'>
+						<p class="title">Реєстрація Турагенства</p>
+
+						<form action="/d-01-agency-create.php" method="GET" id='form_reg'>
+							<div class="form-group">
+								<span>Назва агенції</span>
+								<input type="text" class="form-control">
+							</div>
+
+							<div class="form-group">
+								<span>Номер платника</span>
+								<input type="text" class="form-control num-only" name="tax_number" placeholder="" minlength="10" maxlength="10" required>
+							</div>
+
+							<div class="form-group">
+								<span>Країна</span>
+								<!-- <input type="text" class="form-control text-only" name="country" placeholder="" required> -->
+								<select class="form-control" id="country" name="country" required>
+									
+									<option value="<?=$k?>">Erhf]yf</option>
+									<option value="<?=$k?>">Erhf]yf</option>
+									<option value="<?=$k?>">Erhf]yf</option>
+									<option value="<?=$k?>">Erhf]yf</option>
+									
+								</select>
+							</div>
+
+							<div class="form-group">
+								<span>Номер мобільного</span>
+								<input type="text" class="form-control"> 
+							</div>
+
+							<div class="form-group">
+								<input type="submit" class="btn btn-blue" value="Зареєструватися">
+							</div>
+
+						</form>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<h2 class="text-center title-page">коротко про нас</h2>
+				</div>
+
+				<div class="col-md-6 text-center">
+					<img src="land_inc/images/macbook.png" alt="macbook" class="macbook">
+				</div>
+
+				<div class="col-md-6">
+					<div class="about-us panel">
+						<p class="title">Nullam ultricies odio sed tellus</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum, nisi in tempus aliquet, ipsum massa mattis arcu, id sagittis dolor elit nec nibh. Nunc eros sem, dictum at dolor sit amet, egestas gravida ligula. Praesent molestie elementum blandit. Nullam ultricies odio sed tellus rutrum ultricies. Phasellus in aliquet eros. Morbi euismod nisl et bibendum tincidunt. Morbi id turpis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices tellus vestibulum ante ullamcorper dictum.
+						</p>
+
+						<a href="#" class="btn btn-blue">Почати зараз</a>
+					</div>
+				</div>
+
+				<img src="land_inc/images/rocket2.png" alt="rocket2" class="rocket-2">
+			</div>
+			<div class="line"></div>
+		</div>
+	</section>
+
+	<section class="section-3">
+		<img src="land_inc/images/rocket3.png" alt="rocket 3" class="rocket-3">
+
+		<div class="wrapper wrapper-third">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center title-page color-pink">Чому ми?</h2>
+				</div>
+			</div>
+
+			<div class="row why-we">
+				<div class="col-md-4 text-center">
+					<img src="land_inc/images/why-we-1.png" alt="">
+					<p class="heading color-pink">Безпека</p>
+					<p>
+						Ми гарантуємо повну безпеку
+						<br> Ваших даних
+					</p>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<img src="land_inc/images/why-we-2.png" alt="">
+					<p class="heading color-pink">Комфорт</p>
+					<p>
+						Забезпечення Вашого
+						<br> комфорту протягом подорожі
+					</p>
+				</div>
+
+				<div class="col-md-4 text-center">
+					<img src="land_inc/images/why-we-3.png" alt="">
+					<p class="heading color-pink">Зв’язок</p>
+					<p>
+						Ми обслуговуємо наших
+						<br> клієнтів 24/7
+					</p>
+				</div>
+			</div>
+
+			<div class="row our-clients">
+				<div class="col-md-12">
+					<h2 class="text-center title-page color-pink">що про нас кажуть клієнти</h2>
+				</div>
+				<div class="owl-carousel loop">
+					<div class="item text-center">
+						<img src="land_inc/images/avatar.png" alt="" class="img-circle">
+						<p class="name">Іван Петренко</p>
+						<p class="color-pink position">
+							Директор турагенства
+							<br> “Поїхали з нами”
+						</p>
+						<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac varius leo, et tincidunt lacus. Nam in efficitur diam. Aliquam pulvinar augue erat, et pulvinar quam dapibus ac. Phasellus sit amet eleifend justo, et sagittis enim. Duis sodales malesuada bibendum. Aenean sed sollicitudin nisl. Vestibulum vestibulum, massa eget ultricies scelerisque, ex arcu egestas ante, dictum facilisis arcu odio ut dolor. Nullam urna est, feugiat fermentum sagittis tempor, pellentesque et nunc. Nam eget lobortis est. Pellentesque ac felis sit amet ex porttitor varius.</p>
+					</div>
+
+					<div class="item text-center">
+						<img src="land_inc/images/avatar.png" alt="" class="img-circle">
+						<p class="name">Іван Петренко</p>
+						<p class="color-pink position">
+							Директор турагенства
+							<br> “Поїхали з нами”
+						</p>
+						<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac varius leo, et tincidunt lacus. Nam in efficitur diam. Aliquam pulvinar augue erat, et pulvinar quam dapibus ac. Phasellus sit amet eleifend justo, et sagittis enim. Duis sodales malesuada bibendum. Aenean sed sollicitudin nisl. Vestibulum vestibulum, massa eget ultricies scelerisque, ex arcu egestas ante, dictum facilisis arcu odio ut dolor. Nullam urna est, feugiat fermentum sagittis tempor, pellentesque et nunc. Nam eget lobortis est. Pellentesque ac felis sit amet ex porttitor varius.</p>
+					</div>
+					<div class="item text-center">
+						<img src="land_inc/images/avatar.png" alt="" class="img-circle">
+						<p class="name">Іван Петренко</p>
+						<p class="color-pink position">
+							Директор турагенства
+							<br> “Поїхали з нами”
+						</p>
+						<p class="text-center description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac varius leo, et tincidunt lacus. Nam in efficitur diam. Aliquam pulvinar augue erat, et pulvinar quam dapibus ac. Phasellus sit amet eleifend justo, et sagittis enim. Duis sodales malesuada bibendum. Aenean sed sollicitudin nisl. Vestibulum vestibulum, massa eget ultricies scelerisque, ex arcu egestas ante, dictum facilisis arcu odio ut dolor. Nullam urna est, feugiat fermentum sagittis tempor, pellentesque et nunc. Nam eget lobortis est. Pellentesque ac felis sit amet ex porttitor varius.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='footer-section'>
+		<div class="wrapper">
+			<footer>
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center title-page">Почніть вже сьогодні!</p>
+						<p class="text-center context">
+							Ми пропонуємо якісний сервіс для
+							<br> управління Вашими подорожами
+						</p>
+						<div class="text-center">
+							<a href="#" class="btn btn-blue btn-big start-now">Почати зараз</a>
+						</div>
+					</div>
+				</div>
+				<div class="row contact">
+					<div class="col-md-4 phone">
+						<img src="land_inc/images/phone.png" alt="">
+						<a href="tel:0506058127">+38 (050) 605-81-27</a>
+						<a href="tel:0730653991">+38 (073) 065-39-91</a>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<img src="land_inc/images/mail.png" alt="">
+						<a href="mailto:info@sitekafe.com" class="email">info@sitekafe.com</a>
+					</div>
+
+					<div class="col-md-4 map">
+						<img src="land_inc/images/map.png" alt="">
+						<p>м.Дрогобич, вул. П.Орлика 14/1</p>
+						<p>м.Львів, вул. О.Мишуги 13</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</section>
+
+
+
+	<!-- <div id='preloader' class='active preloader land_preload'>
+		<div class="preloader-wrapper big active movies-filter-results-loading">
+			<div class="spinner-layer spinner-green-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div><div class="gap-patch">
+					<div class="circle"></div>
+				</div><div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
+
+
+
+</body>
+
+</html>
