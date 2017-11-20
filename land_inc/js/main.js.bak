@@ -1,0 +1,61 @@
+jQuery(document).ready(function(){
+	jQuery(".header_language_current").on("click", function() {
+		var _this = $(this),
+				container = _this.closest(".header_language"),
+				langList = container.find(".header_language_list");
+		langList.toggleClass("active");
+	});
+	jQuery(".header_language_list li").on("click", function() {
+		var _this = $(this),
+			language = $.cookie( 'language' ),
+			listItemClick = _this.text(),
+			container = _this.closest(".header_language"),
+			selectCustom = container.find(".header_language_current_"),
+			selectCustomList = _this.closest('.header_language_list');
+		jQuery(".header_language_list li").removeClass('current');
+		$.cookie( 'language', _this.attr('class') );
+		_this.addClass('current');
+		selectCustomList.removeClass("active");
+		selectCustom.text(listItemClick);
+		location.reload();
+	});
+	var language = $.cookie( 'language' );
+	jQuery('.header_language_list li').each(function(){
+		if($(this).hasClass(language)){
+			$(this).addClass('current');
+			$(".header_language_current_").text($(this).text());
+		}
+	});
+
+	  $('#play-video').on('click', function(ev) {
+		$("#show-video .modal-dialog .modal-body iframe")[0].src += "&autoplay=1";
+		ev.preventDefault();
+	  });
+});
+$(document).mouseup(function (e) {
+  var container = $(".header_language_list");
+  if ($(e.target).closest(".header_language").length) return;
+    container.removeClass("active");
+    e.stopPropagation();
+});
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('.register-btn a[href^="#"], a[href^="#"].scroll-down').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            //window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+}
