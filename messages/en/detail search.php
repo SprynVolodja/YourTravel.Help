@@ -1,0 +1,45 @@
+<?php echo Yii::t('general', 'Показать еще') ?>
+return [
+        "Горячая линия"=>"Hotline",
+        "Блог"=>"Blog"
+        "Сотрудничество"=>"Cooperation",
+        "Информация"=>"Information",
+        "Кабинет"=>"Cabinet",
+        "Звезды"=>"Stars",
+        "Питание"=>"Food",
+        "Курорты"=>"Resorts",
+        "Пляж"=>"Beach",
+        "Для детей"=>"For children",
+        "Инфраструктура"=>"Infrastructure",
+        "В номерах"=>"In the rooms",
+        "Развлечения и спорт"=>"Entertainment and Sports",
+        "Выбор отеля"=>"Hotel choice",
+        "Рейтинги отеля"=>"Ratings of the hotel",
+        "Диапазон цен"=>"Price range",
+        "Очистить"=>"Clear",
+        "Поиск"=>"Search",
+        "По вашему запросу найдено 80 результатов"=>"There are 80 results found for your search",
+        "Показать"=>"Show",
+        "Показано 10 из 80"=>"Showing 10 of 80",
+        "Цена"=>"Price",
+        "Забронировать"=>"Reserve",
+        "Рейтинг пользователей"=>"User rating",
+        "Начало тура"=>"Start of the tour",
+        "Транспорт"=>"Transport",
+        "Питание"=>"Food",
+        "Тип пляжа"=>"Type of beach",
+        "Тип линии"=>"Line type",
+        "Показать еще"=>"Show more",
+        "О нас"=>"About us",
+        "Информация"=>"Information",
+        "Туры"=>"Tours",
+        "Премиум"=>"Premium",
+        "Контакты"=>"Contacts",
+        "Как это работает?"=>"How does it work??"
+	
+    'Укр' => 'Укр',
+    'Анг' => 'Анг',
+    'Рус' => 'Рус',
+
+
+];
